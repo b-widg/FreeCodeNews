@@ -1,0 +1,29 @@
+{{!-- ICONS  https://material.io/tools/icons/?style=baseline --}}
+
+<div class="row">
+    {{#each article}}
+    <div class="col s12 m6 l4 center-align card-container">
+        <div class="card blue-grey lighten-5">
+            <a href={{this.link}} target=" _blank">
+                <div class="card-image">
+                    <img src={{this.imageSource}} style="max-width: 100%; max-height:200px" alt="" />
+                    <a href=" {{this.profileLink}}" target=" _blank"
+                        class="right btn-floating halfway-fab waves-effect waves-light blue"
+                        style="margin-right: .5rem">
+                        <i class="material-icons"><img src={{this.authorImage}} /></i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <a href={{this.link}} target=" _blank"> {{this.title}}</a>
+            </a>
+        </div>
+        <div class="card-action" style="height:3rem">
+
+            <strong><a href={{this.profileLink}} target="_blank">Author: {{this.authorName}}</a></strong>
+
+        </div>
+    </div>
+</div>
+{{/each}}
+
+</div>

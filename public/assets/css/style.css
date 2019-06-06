@@ -1,0 +1,18 @@
+.card-container {
+  height: 400px; /*setting height fixes row problem with cards*/
+}
+.card {
+  height: 90%; /* make visible cards same (close to) percent of parent height -- 100% overflows container*/
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
